@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons | Learn Nim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234a6fa5'/><text x='50' y='55' text-anchor='middle' fill='white' font-size='40'>N</text></svg>"
+                    alt="Nim Logo">
+                <h1>Learn Nim</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lessons.html" class="active">Lessons</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Nim Programming Lessons</h1>
+
+            <div class="lesson-layout">
+                <aside class="lesson-sidebar">
+                    <h3>Topics</h3>
+                    <ul class="lesson-menu" id="lessonMenu">
+                        <li><a href="#" data-topic="input" class="active">Input</a></li>
+                        <li><a href="#" data-topic="output">Output</a></li>
+                        <li><a href="#" data-topic="operators">Operators</a></li>
+                        <li><a href="#" data-topic="conditions">Conditions</a></li>
+                        <li><a href="#" data-topic="loops">Loops</a></li>
+                    </ul>
+                </aside>
+
+                <div class="lesson-content">
+                    <!-- Input Section -->
+                    <section id="input" class="lesson-section active">
+                        <h2>Input in Nim</h2>
+                        <p>In Nim, you can read input from the standard input (stdin) using the <code>readLine</code>
+                            procedure. This function reads a line of text from the user and returns it as a string.</p>
+
+                        <div class="code-block">
+                            <span class="code-comment"># Read a line from standard input</span><br>
+                            let name = readLine(stdin)<br>
+                            <br>
+                            <span class="code-comment"># Convert to integer if needed</span><br>
+                            let age = parseInt(readLine(stdin))
+                        </div>
+
+                        <p>Key points about input in Nim:</p>
+                        <ul>
+                            <li><code>readLine(stdin)</code> returns a string</li>
+                            <li>To read numbers, you need to convert the string using functions like
+                                <code>parseInt</code>, <code>parseFloat</code>, etc.
+                            </li>
+                            <li>The <code>stdin</code> parameter specifies the input stream (usually the keyboard)</li>
+                            <li>Always consider error handling for invalid input in real applications</li>
+                        </ul>
+                    </section>
+
+                    <!-- Output Section -->
+                    <section id="output" class="lesson-section">
+                        <h2>Output in Nim</h2>
+                        <p>Nim uses the <code>echo</code> statement for output. It's similar to <code>print</code> in
+                            Python or <code>println</code> in other languages. The <code>echo</code> statement
+                            automatically adds a newline at the end.</p>
+
+                        <div class="code-block">
+                            <span class="code-comment"># Basic output</span><br>
+                            echo "Hello, World!"<br>
+                            <br>
+                            <span class="code-comment"># Output multiple values</span><br>
+                            echo "Name: ", name, " Age: ", age<br>
+                            <br>
+                            <span class="code-comment"># Format strings (Nim 2.0+)</span><br>
+                            echo "User: {name}, Age: {age}"
+                        </div>
+
+                        <p>Key features of <code>echo</code>:</p>
+                        <ul>
+                            <li>Automatically converts values to strings</li>
+                            <li>Adds a newline character at the end</li>
+                            <li>Can output multiple values separated by commas</li>
+                            <li>For output without a newline, use <code>stdout.write</code></li>
+                        </ul>
+                    </section>
+
+                    <!-- Operators Section -->
+                    <section id="operators" class="lesson-section">
+                        <h2>Numeric Operators</h2>
+                        <p>Nim supports all standard arithmetic operators for numeric operations. These operators work
+                            with integers, floats, and other numeric types.</p>
+
+                        <div class="code-block">
+                            <span class="code-comment"># Basic arithmetic</span><br>
+                            let a = 10<br>
+                            let b = 3<br>
+                            <br>
+                            echo "Addition: ", a + b <span class="code-comment"># 13</span><br>
+                            echo "Subtraction: ", a - b <span class="code-comment"># 7</span><br>
+                            echo "Multiplication: ", a * b <span class="code-comment"># 30</span><br>
+                            echo "Division: ", a / b <span class="code-comment"># 3.3333333333333335 (float)</span><br>
+                            echo "Integer division: ", a div b <span class="code-comment"># 3</span><br>
+                            echo "Modulus: ", a mod b <span class="code-comment"># 1</span>
+                        </div>
+
+                        <p>Important notes:</p>
+                        <ul>
+                            <li><code>/</code> always returns a float, even with integer operands</li>
+                            <li>Use <code>div</code> for integer division</li>
+                            <li>Use <code>mod</code> for modulus (remainder) operation</li>
+                            <li>Nim also supports compound assignment operators like <code>+=</code>, <code>-=</code>,
+                                etc.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Conditions Section -->
+                    <section id="conditions" class="lesson-section">
+                        <h2>Conditions in Nim</h2>
+                        <p>Nim uses <code>if</code>, <code>elif</code> (else if), and <code>else</code> for conditional
+                            execution. The syntax is similar to Python but uses <code>elif</code> instead of
+                            <code>elif</code>.
+                        </p>
+
+                        <div class="code-block">
+                            <span class="code-comment"># Basic conditional structure</span><br>
+                            let score = 85<br>
+                            <br>
+                            if score >= 90:<br>
+                            &nbsp;&nbsp;echo "Grade: A"<br>
+                            elif score >= 80:<br>
+                            &nbsp;&nbsp;echo "Grade: B"<br>
+                            elif score >= 70:<br>
+                            &nbsp;&nbsp;echo "Grade: C"<br>
+                            else:<br>
+                            &nbsp;&nbsp;echo "Grade: F"<br>
+                            <br>
+                            <span class="code-comment"># One-liner condition (ternary-like)</span><br>
+                            let message = if score > 50: "Pass" else: "Fail"
+                        </div>
+
+                        <p>Key characteristics:</p>
+                        <ul>
+                            <li>Conditions don't require parentheses</li>
+                            <li>Blocks are defined by indentation (like Python)</li>
+                            <li>You can use the <code>if</code> expression for assignments</li>
+                            <li>Nim also supports <code>case</code> statements for pattern matching</li>
+                        </ul>
+                    </section>
+
+                    <!-- Loops Section -->
+                    <section id="loops" class="lesson-section">
+                        <h2>Loops in Nim</h2>
+                        <p>Nim provides several looping constructs, with <code>for</code> and <code>while</code> being
+                            the most common. Nim's loops are powerful and expressive.</p>
+
+                        <h3>For Loops</h3>
+                        <div class="code-block">
+                            <span class="code-comment"># Iterate over a range</span><br>
+                            for i in 0..5:<br>
+                            &nbsp;&nbsp;echo "Count: ", i<br>
+                            <br>
+                            <span class="code-comment"># Iterate over a sequence</span><br>
+                            let fruits = @["apple", "banana", "cherry"]<br>
+                            for fruit in fruits:<br>
+                            &nbsp;&nbsp;echo "Fruit: ", fruit<br>
+                            <br>
+                            <span class="code-comment"># Count down</span><br>
+                            for i in countdown(5, 0):<br>
+                            &nbsp;&nbsp;echo "Countdown: ", i
+                        </div>
+
+                        <h3>While Loops</h3>
+                        <div class="code-block">
+                            <span class="code-comment"># Basic while loop</span><br>
+                            var counter = 0<br>
+                            while counter < 3:<br>
+                                &nbsp;&nbsp;echo "While loop: ", counter<br>
+                                &nbsp;&nbsp;counter += 1<br>
+                                <br>
+                                <span class="code-comment"># Infinite loop with break</span><br>
+                                while true:<br>
+                                &nbsp;&nbsp;let input = readLine(stdin)<br>
+                                &nbsp;&nbsp;if input == "quit":<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                                &nbsp;&nbsp;echo "You entered: ", input
+                        </div>
+
+                        <p>Important notes:</p>
+                        <ul>
+                            <li><code>for</code> loops are preferred when the number of iterations is known</li>
+                            <li><code>while</code> loops are used when the condition is dynamic</li>
+                            <li>Nim also has <code>block</code> and <code>break</code> for more complex control flow
+                            </li>
+                            <li>The <code>..</code> operator creates inclusive ranges</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn Nim</h3>
+                    <p>Your comprehensive resource for mastering the Nim programming language.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lessons.html">Lessons</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://nim-lang.org" target="_blank">Official Nim Website</a></li>
+                        <li><a href="https://nim-lang.org/documentation.html" target="_blank">Nim Documentation</a></li>
+                        <li><a href="https://github.com/nim-lang/Nim" target="_blank">Nim GitHub Repository</a></li>
+                        <li><a href="https://forum.nim-lang.org" target="_blank">Nim Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Learn Nim. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

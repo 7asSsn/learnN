@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Learn Nim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234a6fa5'/><text x='50' y='55' text-anchor='middle' fill='white' font-size='40'>N</text></svg>"
+                    alt="Nim Logo">
+                <h1>Learn Nim</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Nim Programming Quiz</h1>
+
+            <div class="quiz-container" id="quizContainer">
+                <!-- Input Section -->
+                <div class="quiz-section">
+                    <h2>Input in Nim</h2>
+                    <div class="quiz-question">1. Which function is used to read a line from standard input in Nim?
+                    </div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q1" data-answer="a">
+                            <span class="option-letter">A</span> readLine(stdin)
+                        </div>
+                        <div class="quiz-option" data-question="q1" data-answer="b">
+                            <span class="option-letter">B</span> input()
+                        </div>
+                        <div class="quiz-option" data-question="q1" data-answer="c">
+                            <span class="option-letter">C</span> getline()
+                        </div>
+                        <div class="quiz-option" data-question="q1" data-answer="d">
+                            <span class="option-letter">D</span> scanf()
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">2. How would you read an integer from the user in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q2" data-answer="a">
+                            <span class="option-letter">A</span> let num = readInt(stdin)
+                        </div>
+                        <div class="quiz-option" data-question="q2" data-answer="b">
+                            <span class="option-letter">B</span> let num = parseInt(readLine(stdin))
+                        </div>
+                        <div class="quiz-option" data-question="q2" data-answer="c">
+                            <span class="option-letter">C</span> let num = input()
+                        </div>
+                        <div class="quiz-option" data-question="q2" data-answer="d">
+                            <span class="option-letter">D</span> let num = stdin.getInt()
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">3. What type does readLine(stdin) return?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q3" data-answer="a">
+                            <span class="option-letter">A</span> int
+                        </div>
+                        <div class="quiz-option" data-question="q3" data-answer="b">
+                            <span class="option-letter">B</span> float
+                        </div>
+                        <div class="quiz-option" data-question="q3" data-answer="c">
+                            <span class="option-letter">C</span> string
+                        </div>
+                        <div class="quiz-option" data-question="q3" data-answer="d">
+                            <span class="option-letter">D</span> char
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Output Section -->
+                <div class="quiz-section">
+                    <h2>Output in Nim</h2>
+                    <div class="quiz-question">4. Which statement is used for output in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q4" data-answer="a">
+                            <span class="option-letter">A</span> print
+                        </div>
+                        <div class="quiz-option" data-question="q4" data-answer="b">
+                            <span class="option-letter">B</span> echo
+                        </div>
+                        <div class="quiz-option" data-question="q4" data-answer="c">
+                            <span class="option-letter">C</span> console.log
+                        </div>
+                        <div class="quiz-option" data-question="q4" data-answer="d">
+                            <span class="option-letter">D</span> stdout
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">5. What does the echo statement automatically add at the end of output?
+                    </div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q5" data-answer="a">
+                            <span class="option-letter">A</span> A space
+                        </div>
+                        <div class="quiz-option" data-question="q5" data-answer="b">
+                            <span class="option-letter">B</span> A tab
+                        </div>
+                        <div class="quiz-option" data-question="q5" data-answer="c">
+                            <span class="option-letter">C</span> A newline
+                        </div>
+                        <div class="quiz-option" data-question="q5" data-answer="d">
+                            <span class="option-letter">D</span> Nothing
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">6. How would you output without a newline in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q6" data-answer="a">
+                            <span class="option-letter">A</span> echo "text", ""
+                        </div>
+                        <div class="quiz-option" data-question="q6" data-answer="b">
+                            <span class="option-letter">B</span> stdout.write("text")
+                        </div>
+                        <div class="quiz-option" data-question="q6" data-answer="c">
+                            <span class="option-letter">C</span> print("text", end="")
+                        </div>
+                        <div class="quiz-option" data-question="q6" data-answer="d">
+                            <span class="option-letter">D</span> write("text")
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operators Section -->
+                <div class="quiz-section">
+                    <h2>Operators in Nim</h2>
+                    <div class="quiz-question">7. What does the / operator return in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q7" data-answer="a">
+                            <span class="option-letter">A</span> An integer
+                        </div>
+                        <div class="quiz-option" data-question="q7" data-answer="b">
+                            <span class="option-letter">B</span> A float
+                        </div>
+                        <div class="quiz-option" data-question="q7" data-answer="c">
+                            <span class="option-letter">C</span> A rational number
+                        </div>
+                        <div class="quiz-option" data-question="q7" data-answer="d">
+                            <span class="option-letter">D</span> Depends on operands
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">8. Which operator is used for integer division in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q8" data-answer="a">
+                            <span class="option-letter">A</span> /
+                        </div>
+                        <div class="quiz-option" data-question="q8" data-answer="b">
+                            <span class="option-letter">B</span> div
+                        </div>
+                        <div class="quiz-option" data-question="q8" data-answer="c">
+                            <span class="option-letter">C</span> //
+                        </div>
+                        <div class="quiz-option" data-question="q8" data-answer="d">
+                            <span class="option-letter">D</span> intdiv
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">9. What is the result of 17 mod 5 in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q9" data-answer="a">
+                            <span class="option-letter">A</span> 2
+                        </div>
+                        <div class="quiz-option" data-question="q9" data-answer="b">
+                            <span class="option-letter">B</span> 3
+                        </div>
+                        <div class="quiz-option" data-question="q9" data-answer="c">
+                            <span class="option-letter">C</span> 4
+                        </div>
+                        <div class="quiz-option" data-question="q9" data-answer="d">
+                            <span class="option-letter">D</span> 1
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conditions Section -->
+                <div class="quiz-section">
+                    <h2>Conditions in Nim</h2>
+                    <div class="quiz-question">10. What keyword is used for "else if" in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q10" data-answer="a">
+                            <span class="option-letter">A</span> elseif
+                        </div>
+                        <div class="quiz-option" data-question="q10" data-answer="b">
+                            <span class="option-letter">B</span> else if
+                        </div>
+                        <div class="quiz-option" data-question="q10" data-answer="c">
+                            <span class="option-letter">C</span> elif
+                        </div>
+                        <div class="quiz-option" data-question="q10" data-answer="d">
+                            <span class="option-letter">D</span> elsif
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">11. How are code blocks defined in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q11" data-answer="a">
+                            <span class="option-letter">A</span> Curly braces {}
+                        </div>
+                        <div class="quiz-option" data-question="q11" data-answer="b">
+                            <span class="option-letter">B</span> Parentheses ()
+                        </div>
+                        <div class="quiz-option" data-question="q11" data-answer="c">
+                            <span class="option-letter">C</span> Indentation
+                        </div>
+                        <div class="quiz-option" data-question="q11" data-answer="d">
+                            <span class="option-letter">D</span> begin/end keywords
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">12. Which of the following is a valid conditional expression in Nim?
+                    </div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q12" data-answer="a">
+                            <span class="option-letter">A</span> let x = if a > b then a else b
+                        </div>
+                        <div class="quiz-option" data-question="q12" data-answer="b">
+                            <span class="option-letter">B</span> let x = a > b ? a : b
+                        </div>
+                        <div class="quiz-option" data-question="q12" data-answer="c">
+                            <span class="option-letter">C</span> let x = (a > b) ? a : b
+                        </div>
+                        <div class="quiz-option" data-question="q12" data-answer="d">
+                            <span class="option-letter">D</span> let x = a if a > b else b
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loops Section -->
+                <div class="quiz-section">
+                    <h2>Loops in Nim</h2>
+                    <div class="quiz-question">13. How do you create an inclusive range in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q13" data-answer="a">
+                            <span class="option-letter">A</span> 1..5
+                        </div>
+                        <div class="quiz-option" data-question="q13" data-answer="b">
+                            <span class="option-letter">B</span> 1...5
+                        </div>
+                        <div class="quiz-option" data-question="q13" data-answer="c">
+                            <span class="option-letter">C</span> [1, 5]
+                        </div>
+                        <div class="quiz-option" data-question="q13" data-answer="d">
+                            <span class="option-letter">D</span> range(1, 5)
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">14. Which loop is best when you know the number of iterations?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q14" data-answer="a">
+                            <span class="option-letter">A</span> while
+                        </div>
+                        <div class="quiz-option" data-question="q14" data-answer="b">
+                            <span class="option-letter">B</span> for
+                        </div>
+                        <div class="quiz-option" data-question="q14" data-answer="c">
+                            <span class="option-letter">C</span> loop
+                        </div>
+                        <div class="quiz-option" data-question="q14" data-answer="d">
+                            <span class="option-letter">D</span> repeat
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">15. How do you exit a loop immediately in Nim?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-question="q15" data-answer="a">
+                            <span class="option-letter">A</span> exit
+                        </div>
+                        <div class="quiz-option" data-question="q15" data-answer="b">
+                            <span class="option-letter">B</span> break
+                        </div>
+                        <div class="quiz-option" data-question="q15" data-answer="c">
+                            <span class="option-letter">C</span> stop
+                        </div>
+                        <div class="quiz-option" data-question="q15" data-answer="d">
+                            <span class="option-letter">D</span> return
+                        </div>
+                    </div>
+                </div>
+
+                <button id="submitQuiz" class="btn">Submit Quiz</button>
+            </div>
+
+            <div class="result-container" id="resultContainer">
+                <h2>Quiz Results</h2>
+                <div class="result-score" id="scoreDisplay">0/15</div>
+                <p class="result-message" id="messageDisplay">Great job! You're mastering Nim!</p>
+                <button class="btn" onclick="location.reload()">Take Quiz Again</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn Nim</h3>
+                    <p>Your comprehensive resource for mastering the Nim programming language.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lessons.html">Lessons</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://nim-lang.org" target="_blank">Official Nim Website</a></li>
+                        <li><a href="https://nim-lang.org/documentation.html" target="_blank">Nim Documentation</a></li>
+                        <li><a href="https://github.com/nim-lang/Nim" target="_blank">Nim GitHub Repository</a></li>
+                        <li><a href="https://forum.nim-lang.org" target="_blank">Nim Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Learn Nim. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Nim | Modern Systems Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234a6fa5'/><text x='50' y='55' text-anchor='middle' fill='white' font-size='40'>N</text></svg>"
+                    alt="Nim Logo">
+                <h1>Learn Nim</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Master the Nim Programming Language</h2>
+                <p>Nim is a statically typed, compiled systems programming language that combines successful concepts
+                    from mature languages like Python, Ada, and Modula. It offers powerful metaprogramming capabilities,
+                    zero-overhead abstractions, and high performance.</p>
+                <a href="lessons.html" class="btn">Start Learning</a>
+            </section>
+
+            <h2 class="page-title">Our Vision & Mission</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-header">Vision</div>
+                    <div class="card-body">
+                        <p>To make Nim accessible to programmers of all levels by providing clear, comprehensive, and
+                            practical learning resources that demonstrate Nim's power and elegance.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Mission</div>
+                    <div class="card-body">
+                        <p>To empower developers with Nim's unique combination of high-level expressiveness and
+                            low-level control, enabling them to build efficient, reliable, and maintainable software
+                            systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="page-title">Why Learn Nim?</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="feature-list">
+                        <li><strong>Python-like syntax</strong> - Clean, readable code that's easy to learn</li>
+                        <li><strong>Compile-time execution</strong> - Run code during compilation for powerful
+                            metaprogramming</li>
+                        <li><strong>Memory efficiency</strong> - Choose between garbage collection, ARC/ORC, or manual
+                            memory management</li>
+                        <li><strong>Multi-paradigm</strong> - Supports procedural, functional, and object-oriented
+                            programming</li>
+                        <li><strong>Interoperability</strong> - Seamless integration with C, C++, and JavaScript</li>
+                        <li><strong>Performance</strong> - Produces efficient native code comparable to C/C++</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="page-title">About the Developer</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>This educational resource was created by <strong>Dr. Elena Rodriguez</strong>, a programming
+                        language researcher and educator with over 15 years of experience in systems programming. Elena
+                        has contributed to multiple open-source projects and has been a core member of the Nim community
+                        since 2015.</p>
+                    <p>Her goal is to lower the barrier to entry for learning Nim and demonstrate how its unique
+                        features can solve real-world programming challenges efficiently.</p>
+                </div>
+            </div>
+
+            <h2 class="page-title">Contact Us</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn Nim</h3>
+                    <p>Your comprehensive resource for mastering the Nim programming language, from basics to advanced
+                        concepts.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lessons.html">Lessons</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://nim-lang.org" target="_blank">Official Nim Website</a></li>
+                        <li><a href="https://nim-lang.org/documentation.html" target="_blank">Nim Documentation</a></li>
+                        <li><a href="https://github.com/nim-lang/Nim" target="_blank">Nim GitHub Repository</a></li>
+                        <li><a href="https://forum.nim-lang.org" target="_blank">Nim Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Learn Nim. All rights reserved. This is an educational resource not affiliated with the
+                    Nim project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! In a real implementation, this would be sent to our team.');
+            this.reset();
+        });
+
+        // Set active navigation
+        document.querySelectorAll('nav a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
